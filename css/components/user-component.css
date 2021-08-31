@@ -49,13 +49,17 @@
 }
 
 .user-component__column:last-child {
-  color: var(--text-grey);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
 .user-component__time {
+  color: var(--text-grey);
   display: block;
   margin-bottom: 10px;
+}
+
+.user-component__more {
+  color: var(--text-grey);
 }
