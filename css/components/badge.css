@@ -9,3 +9,24 @@
   color: white;
   font-weight: 600;
 }
+
+.badge-dot {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 35px;
+}
+
+.badge-dot--sm {
+  background-color: tomato;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 25px;
+  bottom: 23px;
+}
