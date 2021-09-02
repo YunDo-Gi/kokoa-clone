@@ -87,3 +87,51 @@
 .message-row--own .message__time {
   margin-right: 5px;
 }
+
+.reply {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 0;
+  background-color: white;
+  padding: 5px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1.5px solid var(--border-color);
+}
+
+.reply__column:first-child {
+  color: var(--text-grey);
+  width: 10%;
+}
+
+.reply__column:last-child {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.reply__column:last-child > i {
+  position: absolute;
+  right: 40px;
+  color: var(--text-grey);
+}
+
+.reply button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  right: 3px;
+}
