@@ -90,3 +90,20 @@
   right: 6px;
   font-size: 13px;
 }
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5);
+    color: hotpink;
+  }
+  100% {
+    transform: none;
+  }
+}
+.open-post__likes:hover .fa-heart {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
