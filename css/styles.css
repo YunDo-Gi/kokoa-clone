@@ -26,7 +26,7 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
-.main-screen:not(.division-line) {
+.main-screen {
   padding: 0 var(--horizontal-space);
 }
 
