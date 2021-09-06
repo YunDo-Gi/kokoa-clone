@@ -1,12 +1,38 @@
 .user-component {
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .user-component,
-.user-component__column:first-child {
+.user-component__column {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.user-component__row {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.user-component--vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.user-component--vertical h4 {
+  text-align: center;
+  overflow: hidden;
+}
+
+.user-component--vertical img {
+  margin-bottom: 10px;
 }
 
 .user-component__avatar {
@@ -26,26 +52,80 @@
 }
 
 .user-component__avatar--sm {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 40%;
   margin-right: 20px;
   object-fit: cover;
 }
 
-.user-component__title {
-  font-weight: 600;
+.user-component--vertical .user-component__avatar--sm {
+  margin-right: 0;
+}
+
+.user-component__avatar--xs {
+  width: 34px;
+  height: 34px;
+  border-radius: 40%;
+  object-fit: cover;
+}
+
+.user-component__avatar--undecided {
+  background-color: rgb(110, 186, 216);
+  color: rgb(30, 114, 148);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.user-component__avatar--birthday {
+  background-color: tomato;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.user-component__avatar-group {
+  width: 70px;
+  height: 70px;
+  border-radius: 40%;
+  margin-right: 20px;
+}
+
+.user-component__avatar-group__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-component__title:not(.user-component__title-group) {
   font-size: 22px;
 }
 
-.user-component__title--not-bold {
-  font-weight: 400;
+.user-component__title i {
+  color: tomato;
+  margin-left: 5px;
+}
+
+.user-component__title-group {
+  color: var(--text-grey);
 }
 
 .user-component__subtitle {
-  margin-top: 5px;
+  margin-top: 8px;
   color: var(--text-grey);
   font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.user-component__subtitle img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 5px;
 }
 
 .user-component__column:last-child {
@@ -62,4 +142,16 @@
 
 .user-component__more {
   color: var(--text-grey);
+}
+
+.user-component__gift {
+  color: rgba(0, 0, 0, 0.8);
+  border: 2px solid tomato;
+  border-radius: 20px;
+  padding: 7px 12px;
+}
+
+.user-component__gift i {
+  margin-left: 3px;
+  color: tomato;
 }

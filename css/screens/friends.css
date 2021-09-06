@@ -16,14 +16,13 @@
   padding: 0 var(--horizontal-space);
 }
 
-.friends-screen__channel {
-  margin-top: 25px;
+.friends-screen__category {
   border-top: 1px solid var(--border-color);
   padding-top: 15px;
 }
 
-.friends-screen__channel-header {
-  margin-bottom: 30px;
+.friends-screen__category-header {
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
 }

@@ -10,7 +10,7 @@
   font-weight: 600;
 }
 
-.badge-dot {
+.badge-dot-right {
   background-color: tomato;
   width: 5px;
   height: 5px;
@@ -18,6 +18,17 @@
   display: block;
   position: absolute;
   left: 35px;
+}
+
+.badge-dot-left {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .badge-dot--sm {
