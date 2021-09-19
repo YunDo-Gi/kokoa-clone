@@ -150,6 +150,7 @@
   border: 2px solid tomato;
   border-radius: 20px;
   padding: 7px 12px;
+  width:48px;
 }
 
 .user-component__gift i {
