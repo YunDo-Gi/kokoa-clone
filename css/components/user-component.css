@@ -102,6 +102,7 @@
 
 .user-component__title:not(.user-component__title-group) {
   font-size: 22px;
+  width:250px;
 }
 
 .user-component__title i {
